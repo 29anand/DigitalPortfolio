@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        .main1
+        {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Survey</h1>
+    <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="current-role">Current Role:</label>
+        <br>
+        <input type="text" id="current-role" name="current-role" required><br>
+
+        <label for="phone-number">Phone Number:</label>
+        <br>
+        <input type="tel" id="phone-number" name="phone-number" required><br>
+
+        <label>Indoor Games:</label><br>
+        <input type="checkbox" id="chess" name="indoor-games[]" value="chess">
+        <label for="chess">Chess</label><br>
+
+        <input type="checkbox" id="cards" name="indoor-games[]" value="cards">
+        <label for="cards">Card Games</label><br>
+
+        <input type="checkbox" id="board-games" name="indoor-games[]" value="board-games">
+        <label for="board-games">Board Games</label><br>
+
+        <label>Outdoor Games:</label><br>
+        <input type="checkbox" id="football" name="outdoor-games[]" value="football">
+        <label for="football">Football</label><br>
+
+        <input type="checkbox" id="basketball" name="outdoor-games[]" value="basketball">
+        <label for="basketball">Basketball</label><br>
+
+        <input type="checkbox" id="tennis" name="outdoor-games[]" value="tennis">
+        <label for="tennis">Tennis</label>
+        <br>
+
+        <input class="main2" type="submit" value="Submit"><br>
+        <button class="main1">clear</button>
+    </form>
+    <footer></footer>
+</body>
+</html>
